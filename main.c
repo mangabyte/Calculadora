@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <math.h>
 
+void soma(float *a, float* b) {
+  *a + *b;
+}
+
 int main() {
   /*
     Crie uma calculadora que peça ao usuário a operação que deseja realizar.
