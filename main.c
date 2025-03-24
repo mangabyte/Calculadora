@@ -25,7 +25,5 @@ int main() {
       - Fatorial (só para números inteiros positivos)
       - Logaritmo natural (só para valores positivos)
   */
-  unsigned int expoente;
-  float base;
     return 0;
 }
