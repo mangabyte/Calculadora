@@ -4,7 +4,7 @@
 void soma(float *a, float* b) {
   *a + *b;
 }
-float logaritmonatural(float a) {
+float logaritmoNatural(float a) {
     if (a <= 0) {
         return -1; // função retorna -1 em caso de erro.
 	//O logaritmo natural não está definido para números menores ou iguais a zero.
