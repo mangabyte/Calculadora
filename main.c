@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <math.h>
 
-void soma(float *a, float* b) {
-  *a + *b;
+float soma(float *a, float *b) {
+  return *a + *b;
+}
+
+float divisao (float a, float b){
+  return a / b;
 }
 
 float logaritmoNatural(float a) {
@@ -43,7 +47,7 @@ int main() {
       - Multiplicação
       - Divisão
       - Exponenciação
-      - Raíz quadrada
+      - Raiz quadrada
       - Fatorial (só para números inteiros positivos)
       - Logaritmo natural (só para valores positivos)
   */
