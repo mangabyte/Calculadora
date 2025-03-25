@@ -4,6 +4,13 @@
 void soma(float *a, float* b) {
   *a + *b;
 }
+double calcularRaizQuadrada(double numero) {
+  if (numero < 0) {
+    return -1;
+  }
+  return sqrt(numero);
+}
+
 
 float exponenciacao(float base, unsigned int expoente){
   if(expoente == 0) return 1;
@@ -29,5 +36,5 @@ int main() {
       - Fatorial (só para números inteiros positivos)
       - Logaritmo natural (só para valores positivos)
   */
-    return 0;
+  return 0;
 }
