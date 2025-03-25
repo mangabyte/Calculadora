@@ -10,14 +10,12 @@ float divisao (float a, float b){
 }
 
 float logaritmoNatural(float a) {
-    if (a <= 0) {
-        return -1; 
+  if (a <= 0) return -1; 
 /*
   função retorna -1 em caso de erro.
   O logaritmo natural não está definido para números menores ou iguais a zero.
 */
-    }
-    return log(a);
+  return log(a);
 }
 
 double calcularRaizQuadrada(double numero) {
