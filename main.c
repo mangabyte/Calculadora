@@ -6,14 +6,14 @@ void soma(float *a, float* b) {
 }
 
 int fatorial(int num) {
-  if (number==1) {
+  if (num==1) {
     return 1;
   } 
   else {
-    return fatorial * fatorial(num-1)
+    return num * fatorial(num-1);
   }
-
 }
+
 int main() {
   /*
     Crie uma calculadora que peça ao usuário a operação que deseja realizar.
