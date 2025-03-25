@@ -5,10 +5,14 @@ void soma(float *a, float* b) {
   *a + *b;
 }
 
-float exponenciacao(float base, unsigned int expoente)
-{
+float exponenciacao(float base, unsigned int expoente){
   if(expoente == 0) return 1;
   return base * exponenciacao(base, expoente-1);
+}
+
+int fatorial(int num) {
+  if (num==0) return 1;
+  return num * fatorial(num-1);
 }
 
 int main() {
