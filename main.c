@@ -4,13 +4,24 @@
 void soma(float *a, float* b) {
   *a + *b;
 }
+
+float logaritmoNatural(float a) {
+    if (a <= 0) {
+        return -1; 
+/*
+  função retorna -1 em caso de erro.
+  O logaritmo natural não está definido para números menores ou iguais a zero.
+*/
+    }
+    return log(a);
+}
+
 double calcularRaizQuadrada(double numero) {
   if (numero < 0) {
     return -1;
   }
   return sqrt(numero);
 }
-
 
 float exponenciacao(float base, unsigned int expoente){
   if(expoente == 0) return 1;
