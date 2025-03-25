@@ -1,8 +1,22 @@
 #include <stdio.h>
 #include <math.h>
 
-float divisao (float a, float b){
+float somar(float a, float b) {
+    return a + b;
+}
+
+}float divisao (float a, float b){
   return a / b;
+}
+
+float exponenciacao(float base, unsigned int expoente){
+  if(expoente == 0) return 1;
+  return base * exponenciacao(base, expoente-1);
+}
+
+int fatorial(int num) {
+  if (num==0) return 1;
+  return num * fatorial(num-1);
 }
 
 int main() {
@@ -22,20 +36,7 @@ int main() {
       - Fatorial (só para números inteiros positivos)
       - Logaritmo natural (só para valores positivos)
   */
- // calcule a divisão entre dois números 
- printf ("Escreva dois numeros.\n");
- scanf ("%f, %f", &num1, &num2);
 
-   // Verificar divisão por zero
-   if (num2 == 0) {
-    printf("Erro: Divisão por zero!\n");
-    return 1;
-   }
 
- resultado = divisao (num1, num2);
-// exiba o resultado 
 
- printf ("resultado:%.2f\n", resultado);
-
-    return 0;
-}
+  
