@@ -49,5 +49,41 @@ int main() {
       - Fatorial (só para números inteiros positivos)
       - Logaritmo natural (só para valores positivos)
   */
+  int escolha = 0;
+  do{
+    printf("Digite a opção desejada para acessar a calculadora");
+    scanf("%d", &escolha);
+    printf("1)Soma\n2)Subtração\n3)Multiplicação\n4)Divisão\n5)Exponenciação\n6)Raiz Quadrada\n7)Fatorial\n");
+    printf("8)Logaritmo Natural\n");
+    switch (escolha){
+    case 1:
+      soma();
+      break;
+    case 2:
+      //subtração
+      break;
+    case 3:
+      // Multiplicação
+      break;
+    case 4:
+      divisao();
+      break;
+    case 5:
+      exponenciacao();
+      break;
+    case 6:
+      calcularRaizQuadrada();
+      break;
+    case 7:
+      fatorial();
+      break;
+    case 0:
+      printf("Saindo...");
+      break;
+    default:
+      printf("Opção inválida!\n");
+      break;
+    }
+  } while(!escolha);
   return 0;
 }
