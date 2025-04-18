@@ -49,15 +49,17 @@ int main() {
       - Fatorial (só para números inteiros positivos)
       - Logaritmo natural (só para valores positivos)
   */
-  int escolha = 0;
+  int escolha = 0, a, b;
   do{
     printf("Digite a opção desejada para acessar a calculadora");
-    scanf("%d", &escolha);
     printf("1)Soma\n2)Subtração\n3)Multiplicação\n4)Divisão\n5)Exponenciação\n6)Raiz Quadrada\n7)Fatorial\n");
     printf("8)Logaritmo Natural\n");
+    scanf("%d", &escolha);    
+    printf("Digite os dois valores para a operação desejada: ");
+    scanf("%d %d", &a, &b);
     switch (escolha){
     case 1:
-      soma();
+      soma(&a, &b);
       break;
     case 2:
       //subtração
@@ -66,16 +68,16 @@ int main() {
       // Multiplicação
       break;
     case 4:
-      divisao();
+      divisao(a,b);
       break;
     case 5:
-      exponenciacao();
+      exponenciacao(a,b);
       break;
     case 6:
-      calcularRaizQuadrada();
+      calcularRaizQuadrada(a);
       break;
     case 7:
-      fatorial();
+      fatorial(a);
       break;
     case 0:
       printf("Saindo...");
